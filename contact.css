@@ -1,0 +1,189 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+.html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+.container {
+  max-width: 1200px;
+  width: 90%;
+  margin: auto;
+}
+
+.btn {
+  display: inline-block;
+  padding: 0.5em 1.5em;
+  text-decoration: none;
+  border-radius: 50px;
+  cursor: pointer;
+  outline: none;
+  margin-top: 1em;
+  text-transform: uppercase;
+  font-weight: small;
+}
+
+.btn-primary {
+  color: white;
+  background: black;
+}
+
+.btn-primary:hover {
+  background: nav;
+  transition: background 0.3s ease-in-out;
+}
+
+/* ............/navbar/............ *
+
+/* desktop mode............/// */
+
+.navbar input[type="checkbox"],
+.navbar .hamburger-lines {
+  display: none;
+}
+
+.navbar {
+  box-shadow: 0px 5px 10px 0px #aaa;
+  position: fixed;
+  width: 100%;
+  background: gold;
+  color: #000;
+  opacity: 0.85;
+  height: 50px;
+  z-index: 12;
+}
+
+.navbar-container {
+  display: flex;
+  justify-content: space-between;
+  height: 64px;
+  align-items: center;
+}
+
+.menu-items {
+  order: 2;
+  display: flex;
+}
+
+.menu-items li {
+  list-style: none;
+  margin-left: 1.5rem;
+  margin-bottom: 0.5rem;
+  font-size: 1.2rem;
+}
+
+.menu-items a {
+  text-decoration: none;
+  color: black;
+  font-weight: 500;
+  transition: color 0.3s ease-in-out;
+}
+
+.menu-items a:hover {
+  color: black;
+  transition: color 0.3s ease-in-out;
+}
+
+.logo {
+  order: 1;
+  font-size: 2.3rem;
+  margin-bottom: 0.5rem;
+}
+
+/* ............//// Showcase styling ////......... */
+
+.showcase-area {
+  height: 50vh;
+     background-image: url(contact2.jpg)
+}
+
+.showcase-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  font-size: 1.6rem;
+}
+
+.main-title {
+  text-transform: uppercase;
+  margin-bottom: 2.5em;
+    height:0.2em;
+}
+#footer h2 {
+  text-align: center;
+  font-size: 0.6rem;
+  padding: 0.6rem;
+  font-weight: 45;
+  color: black;
+  background: gold;
+}
+/* Hide submenu by default */
+.submenu {
+    display: none;
+    position: absolute;
+    background-color: azure; /* Background color for the dropdown */
+    padding: 5px 0;
+}
+
+/* Show submenu when the parent is hovered */
+.dropdown:hover .submenu {
+    display: block;
+}
+
+/* Style for individual submenu items */
+.submenu li {
+    display: block;
+    padding: 5px;
+}
+
+/* Style for submenu links */
+.submenu li a {
+    display: block;
+    color: #333; /* Link color */
+    text-decoration: none;
+}
+
+/* Hover effect for submenu links */
+.submenu li a:hover {
+    background-color: gold; /* Hover background color */
+}
+/* Style for the social links container */
+.social-links {
+    text-align: center;
+    font-family: Arial, sans-serif;
+    background-color: lightgoldenrodyellow
+}
+
+/* Style for the images */
+.social-links img {
+    border-radius: 50%;
+    margin: 10px;
+    border: 2px solid #fff; /* Add a white border around the images */
+    transition: transform 0.3s ease-in-out; /* Add a smooth transition effect on hover */
+}
+
+/* Hover effect on images */
+.social-links img:hover {
+    transform: scale(1.1); /* Enlarge the images slightly on hover */
+}
+
+/* Style for the text */
+.social-links p {
+    font-size: 14px;
+    color: black;
+}
+
+
